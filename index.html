@@ -14,10 +14,10 @@
             <li>Fetures</li>
             <li>About</li>
             <li>Contact</li>
-            <img src="/images/user.png" alt="">
+            <img src="/images/user.png" onclick="dropM()">
         </ul>
-    </nav>
 
+        
     <div class="drop-down">
         <div class="dd-top">
             <img src="/images/user.png" class="user">
@@ -47,5 +47,14 @@
             </div>
         </div>
     </div>
+    </nav>
+<script>
+    const openM = document.querySelector('.drop-down');
+    function dropM(){
+        openM.classList.toggle('active')
+    }
+       
+
+</script>
 </body>
 </html>
